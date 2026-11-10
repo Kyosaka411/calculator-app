@@ -58,13 +58,13 @@ button:active {
 }
 
 .equals {
-    background: #667eea;
+    background: #2193f0;
     color: white;
     grid-row: span 2;
 }
 
 .equals:hover {
-    background: #5568d3;
+    background: #1976d2;
 }
 
 .zero {
