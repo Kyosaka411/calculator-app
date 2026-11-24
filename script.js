@@ -98,7 +98,13 @@ function showMemoryIndicator() {
 function hideMemoryIndicator() {
     display.style.borderLeft = 'none';
 }
-function scientificCalc(operation) {
+
+function applyScientificOp() {
+    let select = document.getElementById('scientificOp');
+    let operation = select.value;
+    
+    if (!operation) return;
+    
     try {
         let value = eval(currentInput);
         let result;
@@ -128,6 +134,9 @@ function scientificCalc(operation) {
         
         currentInput = result.toString();
         updateDisplay();
+        
+        // 重置選單
+        select.value = '';
     } catch (error) {
         currentInput = 'Error';
         updateDisplay();
