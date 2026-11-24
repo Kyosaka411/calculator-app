@@ -99,12 +99,16 @@ function hideMemoryIndicator() {
     display.style.borderLeft = 'none';
 }
 
+<<<<<<< HEAD
 function applyScientificOp() {
     let select = document.getElementById('scientificOp');
     let operation = select.value;
     
     if (!operation) return;
     
+=======
+function scientificCalc(operation) {
+>>>>>>> f3c4347ea7849b76cd0631930f8e3c6b7444c872
     try {
         let value = eval(currentInput);
         let result;
@@ -134,9 +138,12 @@ function applyScientificOp() {
         
         currentInput = result.toString();
         updateDisplay();
+<<<<<<< HEAD
         
         // 重置選單
         select.value = '';
+=======
+>>>>>>> f3c4347ea7849b76cd0631930f8e3c6b7444c872
     } catch (error) {
         currentInput = 'Error';
         updateDisplay();
